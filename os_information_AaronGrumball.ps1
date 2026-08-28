@@ -20,7 +20,7 @@ while ($menuSelection -ne 9) {
     Write-Host "8. Get all system information"
     Write-Host "9. Quit"
 
-    # Validates the users input and only accepts numbers from 1 to 9
+    # Validates the user's input and only accepts numbers from 1 to 9
     do {
         $menuSelection = Read-Host "Enter a menu selection from 1 to 9"
 
@@ -30,7 +30,7 @@ while ($menuSelection -ne 9) {
     }
     until ($menuSelection -match '^[1-9]$')
 
-    # Calls the correct function based on the users menu selection
+    # Calls the correct function based on the user's menu selection
     switch ($menuSelection) {
         "1" {
             Get-OperatingSystem
