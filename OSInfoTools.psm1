@@ -1,3 +1,5 @@
+# Contains functions used by the OS information controller script
+
 # Gets the operating system currently being used
 function Get-OperatingSystem {
     try {
